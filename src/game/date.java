@@ -39,6 +39,7 @@ public class date extends javax.swing.JFrame {
         progress.setValue(love);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("DATE");
         setResizable(false);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game/Miss Nerv.png"))); // NOI18N
