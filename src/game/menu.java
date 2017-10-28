@@ -15,7 +15,7 @@ public class menu extends javax.swing.JFrame {
      * Creates new form menu
      */
     public menu() {
-        initComponents();
+        create();
         setVisible(true);
     }
 
@@ -26,19 +26,14 @@ public class menu extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     
-    private void initComponents() {
+    private void create() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
-        jLabel1.setText("jLabel1");
-
-        jLabel2.setText("jLabel2");
 
         jButton1.setText("jButton1");
 
