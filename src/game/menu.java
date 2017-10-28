@@ -6,6 +6,7 @@
 package game;
 
 import java.awt.*;
+import javax.swing.*;
 
 /**
  *
@@ -41,10 +42,10 @@ public class menu extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(665, 379));
         setPreferredSize(new java.awt.Dimension(700, 600));
         setResizable(false);
-        getContentPane().setLayout(new GridLayout(2,1));
+        getContentPane().setLayout(new GridLayout(1,2,3,3));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game/anime-classroom-sunlight-chairs-scenic-anime-13429-resized.png"))); // NOI18N
-        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game/Miss Nerv Win.png"))); // NOI18N
+        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
 
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jButton2.setText("Play");
@@ -63,8 +64,9 @@ public class menu extends javax.swing.JFrame {
     }
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        //fight f = new fight();
-        notAvailable n = new notAvailable();
+
+        jButton3 = new JButton("next");
+        textBlock n = new textBlock("<html>This is just a test of the new system where I type out way to much stuff</html>", jButton3);
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
