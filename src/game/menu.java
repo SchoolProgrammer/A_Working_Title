@@ -28,14 +28,11 @@ public class menu extends javax.swing.JFrame {
     
     private void create() {
 
-        jButton1 = new javax.swing.JButton();
+
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-
-
-        jButton1.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu");
