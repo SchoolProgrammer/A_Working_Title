@@ -91,7 +91,6 @@ public class ticTac extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        //jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game/Miss Nerv Win.png")));
 
         String[] boardDisplay = new String[9];
         for (int i = 0; i < 9; i ++) {

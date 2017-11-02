@@ -1,0 +1,2 @@
+
+jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game/Miss Nerv Win.png")));
