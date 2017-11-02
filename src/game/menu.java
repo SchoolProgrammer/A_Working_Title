@@ -65,8 +65,7 @@ public class menu extends javax.swing.JFrame {
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-        jButton3 = new JButton("next");
-        textBlock n = new textBlock("<html>This is just a test of the new system where I type out way to much stuff</html>", jButton3);
+        textBlock n = new textBlock("There might actually be stuff here later, but for now I'm just going to put this placeholder text here.", "date");
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
