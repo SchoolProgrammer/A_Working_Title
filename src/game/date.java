@@ -122,18 +122,29 @@ public class date extends javax.swing.JFrame {
     
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        date d = new date(0);
-        setVisible(false);
+        removeAll();
+        revalidate();
+        
+        love = love + 10;
+        repaint();
+        initComponents();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        date d = new date(love + 20);
-        setVisible(false);
+        removeAll();
+        revalidate();
+        
+        love = love + 10;
+        repaint();
+        initComponents();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        date d = new date(love + 10);
-        setVisible(false);
+        removeAll();
+        revalidate();
+        love = 0;
+        repaint();
+        initComponents();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -141,13 +152,21 @@ public class date extends javax.swing.JFrame {
             Win w = new Win();
             setVisible(false);
         } else if (love < 20) {
-            date d = new date(0);
-            setVisible(false);
+            removeAll();
+            revalidate();
+            repaint();
+            love = 0;
+            initComponents();
+            
         } else {
-            date d = new date(love - 20);
-            setVisible(false);
+            removeAll();
+            revalidate();
+            repaint();
+            love = love - 20;
+            initComponents();
+            
+            
         }
-        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

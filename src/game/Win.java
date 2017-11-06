@@ -16,6 +16,7 @@ public class Win extends javax.swing.JFrame {
      */
     public Win() {
         initComponents();
+        setResizable(false);
         setVisible(true);
     }
 

@@ -12,7 +12,6 @@ import java.util.Random;
  * @author Will
  */
 public class ticTac extends javax.swing.JFrame {
-
     /**
      * Creates new form ticTac
      */
@@ -20,6 +19,7 @@ public class ticTac extends javax.swing.JFrame {
     static boolean yourTurn;
     public ticTac(int[] spaces, boolean turn) {
         board = spaces;
+        setResizable(false);
         yourTurn = turn;
         if (board[0] != 0) {
             if (board[1] != 0) {
