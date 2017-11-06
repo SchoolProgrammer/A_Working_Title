@@ -5,6 +5,8 @@
  */
 package game;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Will
@@ -123,6 +125,7 @@ public class fight extends javax.swing.JFrame {
         }
         
         ticTac t = new ticTac(board, true);
+        t.setExtendedState(JFrame.MAXIMIZED_BOTH); 
         setVisible(false);
     }                                        
 
