@@ -10,5 +10,7 @@ package game;
  * @author Carey
  */
 public class main {
-    openText m = new openText(); 
+    public static void main(String args[]) {
+        openText m = new openText();
+    } 
 }

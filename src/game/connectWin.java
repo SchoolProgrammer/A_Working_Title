@@ -88,6 +88,7 @@ public class connectWin extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int[]board = new int[9];
         ticTac m = new ticTac(board,true);
+        setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

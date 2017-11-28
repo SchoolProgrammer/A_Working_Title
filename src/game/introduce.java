@@ -87,6 +87,7 @@ public class introduce extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int[][] board = new int[7][6];
         connectFour b = new connectFour(board);
+        setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

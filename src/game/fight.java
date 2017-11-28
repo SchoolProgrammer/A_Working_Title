@@ -27,28 +27,28 @@ public class fight extends javax.swing.JFrame {
             yourHealth = yourHealth - 33;
         }
         
-        
-        
-        Random random = new Random();
-        AIMove = random.nextInt(2);
-        
-        initComponents();
-        setResizable(false);
-        setVisible(true);
-        
         if (yourHealth == 1) {
             fightLost lose = new fightLost();
             setVisible(false);
             lose.setResizable(false);
             lose.setVisible(true);
-        }
-        if (hisHealth == 1) {
+        } else if (hisHealth == 1) {
             fightWin win = new fightWin();
             setVisible(false);
             win.setResizable(false);
             win.setVisible(true);
+        } else {
+
+        
+            Random random = new Random();
+            AIMove = random.nextInt(3);
+        
+            initComponents();
+            setResizable(false);
+            setVisible(true);
         }
         
+                
     }
 
     /**
