@@ -9,9 +9,6 @@ package game;
  *
  * @author Carey
  */
-public class game3 {
-    public static void main(String args []) {
-        int[][] board = new int[7][6];
-        connectFour b = new connectFour(board);
-    }
+public class main {
+    openText m = new openText(); 
 }

@@ -7,6 +7,7 @@ package game;
 
 public class game {
     public static void main(String[] args) {
-        menu m = new menu();
+        int[]board = new int[9];
+        ticTac m = new ticTac(board,true);
     }
 }
