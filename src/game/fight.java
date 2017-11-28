@@ -41,7 +41,7 @@ public class fight extends javax.swing.JFrame {
 
         
             Random random = new Random();
-            AIMove = random.nextInt(3);
+            AIMove = random.nextInt(2);
         
             initComponents();
             setResizable(false);
