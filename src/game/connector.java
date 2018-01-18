@@ -308,6 +308,9 @@ public class connector {
         return true;
     }
     
+    public int fill(int width, int height) {
+        return b[width][height];
+    }
     public boolean check(int width, int height) {
         
         
