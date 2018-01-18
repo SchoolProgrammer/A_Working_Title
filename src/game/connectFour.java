@@ -18,7 +18,7 @@ public class connectFour extends javax.swing.JFrame {
     /**
      * Creates new form connectFour
      */
-    public connectFour(int[][] b) {
+    public connectFour(connector b) {
         board = b;
         initComponents();
         setResizable(false);
@@ -664,7 +664,7 @@ public class connectFour extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify      
-    private static int[][] board;
+    private static connector board;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;

@@ -11,7 +11,7 @@ package game;
  */
 public class game3 {
     public static void main(String args []) {
-        int[][] board = new int[7][6];
+        connector board = new connector();
         connectFour b = new connectFour(board);
     }
 }
