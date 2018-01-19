@@ -3,19 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gme;
+package game;
 
 /**
  *
- * @author janus
+ * @author Carey
  */
-public class Gme {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class game3 {
+    public static void main(String args []) {
+        connector board = new connector();
+        connectFour b = new connectFour(board);
     }
-    
 }
