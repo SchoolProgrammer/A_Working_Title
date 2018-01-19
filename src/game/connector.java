@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package game;
 
 public class connector {
@@ -10,7 +5,11 @@ public class connector {
     int[][] b = new int [7][6];
     
     public connector() {
-        
+        for(int x = 0; x < 7; x ++) {
+            for(int y = 0; y < 6; y ++) {
+                b[x][y] = 0;
+            }
+        }
     }
     
     public boolean dropZero(boolean player) {
@@ -307,13 +306,45 @@ public class connector {
         }
         return true;
     }
-    
     public int fill(int width, int height) {
         return b[width][height];
     }
     public boolean check(int width, int height) {
-        
-        
+        if (width < 4 && height > 2) {
+            if (b[width][height] == b[width + 3][height - 3] && b[width][height] == b[width + 2][height - 2] && b[width][height] == b[width + 1][height - 1]) {
+                return true;
+            }
+        }
+        if (width < 5 && width > 0 && height > 1 && height < 5) {
+            if (b[width][height] == b[width - 1][height + 1] && b[width][height] == b[width + 2][height - 2] && b[width][height] == b[width + 1][height - 1]) {
+                return true;
+            }
+        }
+        if (width < 4) {
+            if (b[width][height] == b[width + 1][height] && b[width][height] == b[width + 2][height] && b[width][height] == b[width + 3][height] ) {
+            return true;
+            }
+        }
+        if (width < 5 && width > 0) {
+            if (b[width][height] == b[width + 1][height] && b[width][height] == b[width + 2][height] && b[width][height] == b[width - 1][height] ) {
+            return true;
+            }
+        }
+        if (width < 4 && height < 3) {
+            if (b[width][height] == b[width + 3][height + 3] && b[width][height] == b[width + 2][height + 2] && b[width][height] == b[width + 1][height + 1]) {
+                return true;
+            }
+        }
+        if (width < 5 && width > 0 && height > 0 && height < 4) {
+            if (b[width][height] == b[width - 1][height - 1] && b[width][height] == b[width + 2][height + 2] && b[width][height] == b[width + 1][height + 1]) {
+                return true;
+            }
+        }
+        if (height < 3) {
+            if (b[width][height] == b[width][height + 3] && b[width][height] == b[width][height + 2] && b[width][height] == b[width][height + 1]) {
+                return true;
+            }
+        }
         return false;
     }
 }
