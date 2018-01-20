@@ -365,6 +365,16 @@ public class connector {
                 return true;
             }
         }
+        if (width > 3 && height > 2) {
+            if (b[width][height] == b[width - 3][height] && b[width][height] == b[width - 2][height] && b[width][height] == b[width - 1][height]) {
+                return true;
+            }
+        }
+        if (width > 2 && width < 5 && height > 1 && height < 5) {
+            if (b[width][height] == b[width + 1][height] && b[width][height] == b[width - 2][height] && b[width][height] == b[width - 1][height]) {
+                return true;
+            }
+        }
         return false;
     }
 }
