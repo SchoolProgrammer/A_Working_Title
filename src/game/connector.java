@@ -168,7 +168,396 @@ public class connector {
         }
         return 0;
     }
-    //Add up to 7
+    public int dropTwo(boolean player) {
+        if (b[2][5] == 0) {
+            if (player) {
+                b[2][5] = 1;
+                if (check(2, 5)) {
+                    return 1;
+                }
+            } else {
+                b[2][5] = -1;
+                if (check(2, 5)) {
+                    return 2;
+                }
+            }
+        } else if (b[2][4] == 0) {
+            if (player) {
+                b[2][4] = 1;
+                if (check(2, 4)) {
+                    return 1;
+                }
+            } else {
+                b[2][4] = -1;
+                if (check(2, 4)) {
+                    return 2;
+                }
+            }
+        } else if (b[2][3] == 0) {
+            if (player) {
+                b[2][3] = 1;
+                if (check(2, 3)) {
+                    return 1;
+                }
+            } else {
+                b[2][3] = -1;
+                if (check(2, 3)) {
+                    return 2;
+                }
+            }
+        } else if (b[2][2] == 0) {
+            if (player) {
+                b[2][2] = 1;
+                if (check(2, 2)) {
+                    return 1;
+                }
+            } else {
+                b[2][2] = -1;
+                if (check(2, 2)) {
+                    return 2;
+                }
+            }
+        } else if (b[2][1] == 0) {
+            if (player) {
+                b[2][1] = 1;
+                if (check(2, 1)) {
+                    return 1;
+                }
+            } else {
+                b[2][1] = -1;
+                if (check(2, 1)) {
+                    return 2;
+                }
+            }
+        } else if (b[2][0] == 0) {
+            if (player) {
+                b[2][0] = 1;
+                if (check(2, 0)) {
+                    return 1;
+                }
+            } else {
+                b[2][0] = -1;
+                if (check(2, 0)) {
+                    return 2;
+                }
+            }
+        } else {
+            return -1;
+        }
+        return 0;
+    }
+    public int dropThree(boolean player) {
+        if (b[3][5] == 0) {
+            if (player) {
+                b[3][5] = 1;
+                if (check(3, 5)) {
+                    return 1;
+                }
+            } else {
+                b[3][5] = -1;
+                if (check(3, 5)) {
+                    return 2;
+                }
+            }
+        } else if (b[3][4] == 0) {
+            if (player) {
+                b[3][4] = 1;
+                if (check(3, 4)) {
+                    return 1;
+                }
+            } else {
+                b[3][4] = -1;
+                if (check(3, 4)) {
+                    return 2;
+                }
+            }
+        } else if (b[3][3] == 0) {
+            if (player) {
+                b[3][3] = 1;
+                if (check(3, 3)) {
+                    return 1;
+                }
+            } else {
+                b[3][3] = -1;
+                if (check(3, 3)) {
+                    return 2;
+                }
+            }
+        } else if (b[3][2] == 0) {
+            if (player) {
+                b[3][2] = 1;
+                if (check(3, 2)) {
+                    return 1;
+                }
+            } else {
+                b[3][2] = -1;
+                if (check(3, 2)) {
+                    return 2;
+                }
+            }
+        } else if (b[3][1] == 0) {
+            if (player) {
+                b[3][1] = 1;
+                if (check(3, 1)) {
+                    return 1;
+                }
+            } else {
+                b[3][1] = -1;
+                if (check(3, 1)) {
+                    return 2;
+                }
+            }
+        } else if (b[3][0] == 0) {
+            if (player) {
+                b[3][0] = 1;
+                if (check(3, 0)) {
+                    return 1;
+                }
+            } else {
+                b[3][0] = -1;
+                if (check(3, 0)) {
+                    return 2;
+                }
+            }
+        } else {
+            return -1;
+        }
+        return 0;
+    }
+    public int dropFour(boolean player) {
+        if (b[4][5] == 0) {
+            if (player) {
+                b[4][5] = 1;
+                if (check(4, 5)) {
+                    return 1;
+                }
+            } else {
+                b[4][5] = -1;
+                if (check(4, 5)) {
+                    return 2;
+                }
+            }
+        } else if (b[4][4] == 0) {
+            if (player) {
+                b[4][4] = 1;
+                if (check(4, 4)) {
+                    return 1;
+                }
+            } else {
+                b[4][4] = -1;
+                if (check(4, 4)) {
+                    return 2;
+                }
+            }
+        } else if (b[4][3] == 0) {
+            if (player) {
+                b[4][3] = 1;
+                if (check(4, 3)) {
+                    return 1;
+                }
+            } else {
+                b[4][3] = -1;
+                if (check(4, 3)) {
+                    return 2;
+                }
+            }
+        } else if (b[4][2] == 0) {
+            if (player) {
+                b[4][2] = 1;
+                if (check(4, 2)) {
+                    return 1;
+                }
+            } else {
+                b[4][2] = -1;
+                if (check(4, 2)) {
+                    return 2;
+                }
+            }
+        } else if (b[4][1] == 0) {
+            if (player) {
+                b[4][1] = 1;
+                if (check(4, 1)) {
+                    return 1;
+                }
+            } else {
+                b[4][1] = -1;
+                if (check(4, 1)) {
+                    return 2;
+                }
+            }
+        } else if (b[4][0] == 0) {
+            if (player) {
+                b[4][0] = 1;
+                if (check(4, 0)) {
+                    return 1;
+                }
+            } else {
+                b[4][0] = -1;
+                if (check(4, 0)) {
+                    return 2;
+                }
+            }
+        } else {
+            return -1;
+        }
+        return 0;
+    }
+    public int dropFive(boolean player) {
+        if (b[5][5] == 0) {
+            if (player) {
+                b[5][5] = 1;
+                if (check(5, 5)) {
+                    return 1;
+                }
+            } else {
+                b[5][5] = -1;
+                if (check(5, 5)) {
+                    return 2;
+                }
+            }
+        } else if (b[5][4] == 0) {
+            if (player) {
+                b[5][4] = 1;
+                if (check(5, 4)) {
+                    return 1;
+                }
+            } else {
+                b[5][4] = -1;
+                if (check(5, 4)) {
+                    return 2;
+                }
+            }
+        } else if (b[5][3] == 0) {
+            if (player) {
+                b[5][3] = 1;
+                if (check(5, 3)) {
+                    return 1;
+                }
+            } else {
+                b[5][3] = -1;
+                if (check(5, 3)) {
+                    return 2;
+                }
+            }
+        } else if (b[5][2] == 0) {
+            if (player) {
+                b[5][2] = 1;
+                if (check(5, 2)) {
+                    return 1;
+                }
+            } else {
+                b[5][2] = -1;
+                if (check(5, 2)) {
+                    return 2;
+                }
+            }
+        } else if (b[5][1] == 0) {
+            if (player) {
+                b[5][1] = 1;
+                if (check(5, 1)) {
+                    return 1;
+                }
+            } else {
+                b[5][1] = -1;
+                if (check(5, 1)) {
+                    return 2;
+                }
+            }
+        } else if (b[5][0] == 0) {
+            if (player) {
+                b[5][0] = 1;
+                if (check(5, 0)) {
+                    return 1;
+                }
+            } else {
+                b[5][0] = -1;
+                if (check(5, 0)) {
+                    return 2;
+                }
+            }
+        } else {
+            return -1;
+        }
+        return 0;
+    }
+    public int dropSix(boolean player) {
+        if (b[6][5] == 0) {
+            if (player) {
+                b[6][5] = 1;
+                if (check(6, 5)) {
+                    return 1;
+                }
+            } else {
+                b[6][5] = -1;
+                if (check(6, 5)) {
+                    return 2;
+                }
+            }
+        } else if (b[6][4] == 0) {
+            if (player) {
+                b[6][4] = 1;
+                if (check(6, 4)) {
+                    return 1;
+                }
+            } else {
+                b[6][4] = -1;
+                if (check(6, 4)) {
+                    return 2;
+                }
+            }
+        } else if (b[6][3] == 0) {
+            if (player) {
+                b[6][3] = 1;
+                if (check(6, 3)) {
+                    return 1;
+                }
+            } else {
+                b[6][3] = -1;
+                if (check(6, 3)) {
+                    return 2;
+                }
+            }
+        } else if (b[6][2] == 0) {
+            if (player) {
+                b[6][2] = 1;
+                if (check(6, 2)) {
+                    return 1;
+                }
+            } else {
+                b[6][2] = -1;
+                if (check(6, 2)) {
+                    return 2;
+                }
+            }
+        } else if (b[6][1] == 0) {
+            if (player) {
+                b[6][1] = 1;
+                if (check(6, 1)) {
+                    return 1;
+                }
+            } else {
+                b[6][1] = -1;
+                if (check(6, 1)) {
+                    return 2;
+                }
+            }
+        } else if (b[6][0] == 0) {
+            if (player) {
+                b[6][0] = 1;
+                if (check(6, 0)) {
+                    return 1;
+                }
+            } else {
+                b[6][0] = -1;
+                if (check(6, 0)) {
+                    return 2;
+                }
+            }
+        } else {
+            return -1;
+        }
+        return 0;
+    }
     public int fill(int width, int height) {
         return b[width][height];
     }
