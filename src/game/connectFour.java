@@ -10,6 +10,7 @@ package game;
  * @author Carey
  */
 
+import java.awt.Color;
 import java.util.Random;
 import javax.swing.JFrame;
 
@@ -484,6 +485,52 @@ public class connectFour extends javax.swing.JFrame {
                 .addGap(0, 14, Short.MAX_VALUE))
         );
 
+        int buttonOneColor = board.fill(0,0);
+        if (buttonOneColor == 1) {
+            jButton1.setBackground(Color.red);
+        } else if (buttonOneColor == -1) {
+            jButton1.setBackground(Color.yellow);
+        }
+        int buttonTwoColor = board.fill(1,0);
+        if (buttonTwoColor == 1) {
+            jButton2.setBackground(Color.red);
+        } else if (buttonTwoColor == -1) {
+            jButton2.setBackground(Color.yellow);
+        }
+        int buttonThreeColor = board.fill(2,0);
+        if (buttonThreeColor == 1) {
+            jButton3.setBackground(Color.red);
+        } else if (buttonThreeColor == -1) {
+            jButton3.setBackground(Color.yellow);
+        }
+        int buttonFourColor = board.fill(3,0);
+        if (buttonFourColor == 1) {
+            jButton4.setBackground(Color.red);
+        } else if (buttonFourColor == -1) {
+            jButton4.setBackground(Color.yellow);
+        }
+        int buttonFiveColor = board.fill(4,0);
+        if (buttonFiveColor == 1) {
+            jButton5.setBackground(Color.red);
+        } else if (buttonFiveColor == -1) {
+            jButton5.setBackground(Color.yellow);
+        }
+        int buttonSixColor = board.fill(5,0);
+        if (buttonSixColor == 1) {
+            jButton6.setBackground(Color.red);
+        } else if (buttonSixColor == -1) {
+            jButton6.setBackground(Color.yellow);
+        }
+        int buttonSevenColor = board.fill(6,0);
+        if (buttonSevenColor == 1) {
+            jButton7.setBackground(Color.red);
+        } else if (buttonSevenColor == -1) {
+            jButton7.setBackground(Color.yellow);
+        }
+        
+        
+        
+        
         pack();
     }// </editor-fold>                        
 
