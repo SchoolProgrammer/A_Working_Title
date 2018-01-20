@@ -489,7 +489,108 @@ public class connectFour extends javax.swing.JFrame {
 
                                        
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        board.dropZero(true);
+        int boardResult = board.dropZero(true);
+        if (boardResult == 1) {
+            connectWin w = new connectWin();
+            setVisible(false);
+        } else if (boardResult == 2) {
+            connectLose l = new connectLose();
+            setVisible(false);
+        } else if (boardResult == 0) {
+            boolean done = false;
+            while (!done) {
+                Random rand = new Random();
+                int r = rand.nextInt(7);
+                if (r == 0) {
+                    int theirBoardResult = board.dropZero(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                } else if (r == 1) {
+                    int theirBoardResult = board.dropOne(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                } else if (r == 2) {
+                    int theirBoardResult = board.dropTwo(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                } else if (r == 3) {
+                    int theirBoardResult = board.dropThree(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                } else if (r == 4) {
+                    int theirBoardResult = board.dropFour(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                } else if (r == 5) {
+                    int theirBoardResult = board.dropFive(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                } else if (r == 6) {
+                    int theirBoardResult = board.dropSix(false); 
+                    if (boardResult == 1) {
+                        connectWin w = new connectWin();
+                        setVisible(false);
+                    } else if (boardResult == 2) {
+                        connectLose l = new connectLose(); 
+                        setVisible(false); 
+                    } else if (boardResult == 0) { 
+                        connectFour f = new connectFour(board);
+                        setVisible(false);
+                    }
+                }
+            }
+            
+            connectFour f = new connectFour(board);
+        } else if (boardResult == -1) {
+        }
     }
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
