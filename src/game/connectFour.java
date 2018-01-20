@@ -503,13 +503,13 @@ public class connectFour extends javax.swing.JFrame {
         board.dropThree(true);
     }
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFour(true);
     }
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFive(true);
     }
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropSix(true);
     }
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         board.dropZero(true);
@@ -526,14 +526,14 @@ public class connectFour extends javax.swing.JFrame {
     }
     
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFour(true);
     }
     
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFive(true);
     }
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropSix(true);
     }
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         board.dropZero(true);
@@ -548,14 +548,14 @@ public class connectFour extends javax.swing.JFrame {
         board.dropThree(true);
     }
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFour(true);
     }
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFive(true);
     }
     
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropSix(true);
     }
     
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -572,13 +572,13 @@ public class connectFour extends javax.swing.JFrame {
         board.dropThree(true);
     }
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFour(true);
     }
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFive(true);
     }
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropSix(true);
     }
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         board.dropZero(true);
@@ -596,13 +596,13 @@ public class connectFour extends javax.swing.JFrame {
     }
     
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFour(true);
     }
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFive(true);
     }
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropSix(true);
     }
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         board.dropZero(true);
@@ -617,13 +617,13 @@ public class connectFour extends javax.swing.JFrame {
         board.dropThree(true);
     }
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFour(true);
     }
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropFive(true);
     }
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        board.dropSix(true);
     }
 
     /**
