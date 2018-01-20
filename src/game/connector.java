@@ -345,6 +345,26 @@ public class connector {
                 return true;
             }
         }
+        if (width > 3 && height < 3) {
+            if (b[width][height] == b[width - 3][height + 3] && b[width][height] == b[width - 2][height + 2] && b[width][height] == b[width - 1][height + 1]) {
+                return true;
+            }
+        }
+        if (width > 2 && width < 5 && height > 0 && height < 4) {
+            if (b[width][height] == b[width + 1][height - 1] && b[width][height] == b[width - 2][height + 2] && b[width][height] == b[width - 1][height + 1]) {
+                return true;
+            }
+        }
+        if (width > 3) {
+            if (b[width][height] == b[width - 3][height] && b[width][height] == b[width - 2][height] && b[width][height] == b[width - 1][height]) {
+                return true;
+            }
+        }
+        if (width > 2 && width < 5) {
+            if (b[width][height] == b[width + 1][height] && b[width][height] == b[width - 2][height] && b[width][height] == b[width - 1][height]) {
+                return true;
+            }
+        }
         return false;
     }
 }
