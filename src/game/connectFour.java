@@ -485,52 +485,48 @@ public class connectFour extends javax.swing.JFrame {
                 .addGap(0, 14, Short.MAX_VALUE))
         );
 
-        int buttonOneColor = board.fill(0,0);
-        if (buttonOneColor == 1) {
-            jButton1.setBackground(Color.red);
-        } else if (buttonOneColor == -1) {
-            jButton1.setBackground(Color.yellow);
-        }
-        int buttonTwoColor = board.fill(1,0);
-        if (buttonTwoColor == 1) {
-            jButton2.setBackground(Color.red);
-        } else if (buttonTwoColor == -1) {
-            jButton2.setBackground(Color.yellow);
-        }
-        int buttonThreeColor = board.fill(2,0);
-        if (buttonThreeColor == 1) {
-            jButton3.setBackground(Color.red);
-        } else if (buttonThreeColor == -1) {
-            jButton3.setBackground(Color.yellow);
-        }
-        int buttonFourColor = board.fill(3,0);
-        if (buttonFourColor == 1) {
-            jButton4.setBackground(Color.red);
-        } else if (buttonFourColor == -1) {
-            jButton4.setBackground(Color.yellow);
-        }
-        int buttonFiveColor = board.fill(4,0);
-        if (buttonFiveColor == 1) {
-            jButton5.setBackground(Color.red);
-        } else if (buttonFiveColor == -1) {
-            jButton5.setBackground(Color.yellow);
-        }
-        int buttonSixColor = board.fill(5,0);
-        if (buttonSixColor == 1) {
-            jButton6.setBackground(Color.red);
-        } else if (buttonSixColor == -1) {
-            jButton6.setBackground(Color.yellow);
-        }
-        int buttonSevenColor = board.fill(6,0);
-        if (buttonSevenColor == 1) {
-            jButton7.setBackground(Color.red);
-        } else if (buttonSevenColor == -1) {
-            jButton7.setBackground(Color.yellow);
-        }
-        
-        
-        
-        
+        jButton1.setBackground(board.fill(0,0));
+        jButton2.setBackground(board.fill(1,0));
+        jButton3.setBackground(board.fill(2,0));
+        jButton4.setBackground(board.fill(3,0));
+        jButton5.setBackground(board.fill(4,0));
+        jButton6.setBackground(board.fill(5,0));
+        jButton7.setBackground(board.fill(6,0));
+        jButton8.setBackground(board.fill(0,1));
+        jButton9.setBackground(board.fill(1,1));
+        jButton10.setBackground(board.fill(2,1));
+        jButton11.setBackground(board.fill(3,1));
+        jButton12.setBackground(board.fill(4,1));
+        jButton13.setBackground(board.fill(5,1));
+        jButton14.setBackground(board.fill(6,1));
+        jButton15.setBackground(board.fill(0,2));
+        jButton16.setBackground(board.fill(1,2));
+        jButton17.setBackground(board.fill(2,2));
+        jButton18.setBackground(board.fill(3,2));
+        jButton19.setBackground(board.fill(4,2));
+        jButton20.setBackground(board.fill(5,2));
+        jButton21.setBackground(board.fill(6,2));
+        jButton22.setBackground(board.fill(0,3));
+        jButton23.setBackground(board.fill(1,3));
+        jButton24.setBackground(board.fill(2,3));
+        jButton25.setBackground(board.fill(3,3));
+        jButton26.setBackground(board.fill(4,3));
+        jButton27.setBackground(board.fill(5,3));
+        jButton28.setBackground(board.fill(6,3));
+        jButton29.setBackground(board.fill(0,4));
+        jButton30.setBackground(board.fill(1,4));
+        jButton31.setBackground(board.fill(2,4));
+        jButton32.setBackground(board.fill(3,4));
+        jButton33.setBackground(board.fill(4,4));
+        jButton34.setBackground(board.fill(5,4));
+        jButton35.setBackground(board.fill(6,4));
+        jButton36.setBackground(board.fill(0,5));
+        jButton37.setBackground(board.fill(1,5));
+        jButton38.setBackground(board.fill(2,5));
+        jButton39.setBackground(board.fill(3,5));
+        jButton40.setBackground(board.fill(4,5));
+        jButton41.setBackground(board.fill(5,5));
+        jButton42.setBackground(board.fill(6,5));
         pack();
     }// </editor-fold>                        
 
