@@ -1,5 +1,7 @@
 package game;
 
+import java.awt.Color;
+
 public class connector {
     
     int[][] b = new int [7][6];
@@ -558,8 +560,13 @@ public class connector {
         }
         return 0;
     }
-    public int fill(int width, int height) {
-        return b[width][height];
+    public Color fill(int width, int height) {
+        if (b[width][height] == -1) {
+            return Color.yellow;
+        } else if (b[width][height] == 1) {
+            return Color.red;
+        }
+    return Color.white;
     }
     public boolean check(int width, int height) {
         if (width < 4 && height > 2) {
