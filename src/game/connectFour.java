@@ -5741,7 +5741,7 @@ public class connectFour extends javax.swing.JFrame {
     private static connector board;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JBtton jButton11;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
