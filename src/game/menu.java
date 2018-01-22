@@ -53,6 +53,11 @@ public class menu extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jButton3.setText("Connect Four");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Comic Sans MS", 3, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 102, 102));
@@ -124,6 +129,13 @@ public class menu extends javax.swing.JFrame {
         f.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        connector b = new connector();
+        connectFourTwoPointOh c = new connectFourTwoPointOh(b,true);
+        c.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
