@@ -20,6 +20,7 @@ public class ticTacTwo extends javax.swing.JFrame {
     static boolean yourTurn;
     public ticTacTwo(int[] spaces, boolean turn) {
         board = spaces;
+        player = turn;
         setResizable(false);
         yourTurn = turn;
         if (board[0] != 0) {
@@ -44,28 +45,8 @@ public class ticTacTwo extends javax.swing.JFrame {
             }
         }
         initComponents();
-        if (!turn) {
-            Random random = new Random();
-            int AISpace = random.nextInt(8);
-            if (board[AISpace] == 0) {
-            board[AISpace] = -1;
-                if (boardCheck()) {
-                   Lose l = new Lose();
-                    setVisible(false);
-                } else {
-                    ticTacTwo t = new ticTacTwo(board, true);
-                    setVisible(false);
-                }   
-            } else {
-                ticTacTwo t = new ticTacTwo(board, false);
-            }
-            
-            
-            
-            
-        } else {
-            setVisible(true);
-        }
+        setVisible(true);
+        
         
     }
 
@@ -223,138 +204,228 @@ public class ticTacTwo extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Lawful good 1
         if (board[0] == 0) {
-            board[0] = 1;
+            if (player) {
+                board[0] = 1;
+            } else {
+                board[0] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 w.setVisible(true);
                 w.setResizable(false);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Neutral Good 2 
         if (board[1] == 0) {
-            board[1] = 1;
+            if (player) {
+                board[1] = 1;
+            } else {
+                board[1] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Lawful neutral 4
         if (board[3] == 0) {
-            board[3] = 1;
+            if (player) {
+                board[3] = 1;
+            } else {
+                board[3] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Lawful evil 7
         if (board[6] == 0) {
-            board[6] = 1;
+            if (player) {
+                board[6] = 1;
+            } else {
+                board[6] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Chaotic Good 3 
         if (board[2] == 0) {
-            board[2] = 1;
+            if (player) {
+                board[2] = 1;
+            } else {
+                board[2] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // True Neutral 5
         if (board[4] == 0) {
-            board[4] = 1;
+            if (player) {
+                board[4] = 1;
+            } else {
+                board[4] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Chaotic Neutral 6
         if (board[5] == 0) {
-            board[5] = 1;
+            if (player) {
+                board[5] = 1;
+            } else {
+                board[5] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // Neutral Evil 8
         if (board[7] == 0) {
-            board[7] = 1;
+            if (player) {
+                board[7] = 1;
+            } else {
+                board[7] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // chaotic Evil 9
         if (board[8] == 0) {
-            board[8] = 1;
+            if (player) {
+                board[8] = 1;
+            } else {
+                board[8] = -1;
+            }
             if (boardCheck()) {
-                WinTic w = new WinTic();
+                String meme = "m";
+                if (player) {
+                    meme = "X";
+                } else {
+                    meme = "O";
+                }
+                WinTic w = new WinTic(meme);
                 setVisible(false);
             } else {
-                ticTacTwo t = new ticTacTwo(board, false);
+                ticTacTwo t = new ticTacTwo(board, !player);
                 setVisible(false);
             }   
         } else {
-            ticTacTwo t = new ticTacTwo(board, true);
+            ticTacTwo t = new ticTacTwo(board, player);
         }
     }    
     
@@ -436,5 +507,6 @@ public class ticTacTwo extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private static boolean player;
     // End of variables declaration                   
 }
