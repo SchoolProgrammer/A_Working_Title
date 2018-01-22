@@ -226,6 +226,8 @@ public class ticTac extends javax.swing.JFrame {
             board[0] = 1;
             if (boardCheck()) {
                 Win w = new Win();
+                w.setVisible(true);
+                w.setResizable(false);
                 setVisible(false);
             } else {
                 ticTac t = new ticTac(board, false);
