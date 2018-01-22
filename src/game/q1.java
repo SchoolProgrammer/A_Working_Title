@@ -39,7 +39,7 @@ public class q1 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Which of these moves can be learned by Magikarp?");
+        jLabel2.setText("Which of these moves is used by Magikarp?");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jButton1.setText("Splash");
