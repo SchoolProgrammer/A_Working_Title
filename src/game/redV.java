@@ -51,6 +51,11 @@ public class redV extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jButton1.setText("Red");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jButton2.setText("Green");
@@ -124,6 +129,13 @@ public class redV extends javax.swing.JFrame {
         l.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        winV w = new winV();
+        w.setResizable(false);
+        w.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
