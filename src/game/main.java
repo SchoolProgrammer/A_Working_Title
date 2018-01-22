@@ -11,6 +11,6 @@ package game;
  */
 public class main {
     public static void main(String args[]) {
-        openText m = new openText();
+        menu m = new menu();
     } 
 }
