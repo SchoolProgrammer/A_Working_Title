@@ -12,13 +12,13 @@ import javax.swing.JFrame;
  *
  * @author Will
  */
-public class ticTac extends javax.swing.JFrame {
+public class ticTacTwo extends javax.swing.JFrame {
     /**
      * Creates new form ticTac
      */
     static int [] board;
     static boolean yourTurn;
-    public ticTac(int[] spaces, boolean turn) {
+    public ticTacTwo(int[] spaces, boolean turn) {
         board = spaces;
         setResizable(false);
         yourTurn = turn;
@@ -31,9 +31,7 @@ public class ticTac extends javax.swing.JFrame {
                                 if (board[6] != 0) {
                                     if (board[7] != 0) {
                                         if (board[8] != 0) {
-                                            connectLose d = new connectLose();
-                                            d.setVisible(true);
-                                            d.setResizable(false);
+                                            Draw d = new Draw();
                                             setVisible(false);
                                         }
                                     }
@@ -52,14 +50,14 @@ public class ticTac extends javax.swing.JFrame {
             if (board[AISpace] == 0) {
             board[AISpace] = -1;
                 if (boardCheck()) {
-                   connectLose l = new connectLose();
+                   Lose l = new Lose();
                     setVisible(false);
                 } else {
-                    ticTac t = new ticTac(board, true);
+                    ticTacTwo t = new ticTacTwo(board, true);
                     setVisible(false);
                 }   
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
             }
             
             
@@ -227,16 +225,16 @@ public class ticTac extends javax.swing.JFrame {
         if (board[0] == 0) {
             board[0] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 w.setVisible(true);
                 w.setResizable(false);
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -244,14 +242,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[1] == 0) {
             board[1] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -259,14 +257,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[3] == 0) {
             board[3] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -274,14 +272,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[6] == 0) {
             board[6] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -289,14 +287,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[2] == 0) {
             board[2] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -304,14 +302,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[4] == 0) {
             board[4] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -319,14 +317,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[5] == 0) {
             board[5] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -334,14 +332,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[7] == 0) {
             board[7] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -349,14 +347,14 @@ public class ticTac extends javax.swing.JFrame {
         if (board[8] == 0) {
             board[8] = 1;
             if (boardCheck()) {
-                Win w = new Win();
+                WinTic w = new WinTic();
                 setVisible(false);
             } else {
-                ticTac t = new ticTac(board, false);
+                ticTacTwo t = new ticTacTwo(board, false);
                 setVisible(false);
             }   
         } else {
-            ticTac t = new ticTac(board, true);
+            ticTacTwo t = new ticTacTwo(board, true);
         }
     }    
     
@@ -408,20 +406,21 @@ public class ticTac extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ticTac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ticTacTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ticTac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ticTacTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ticTac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ticTacTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ticTac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ticTacTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ticTac(board, true).setVisible(true);
+                new ticTacTwo(board, true).setVisible(true);
             }
         });
     }
